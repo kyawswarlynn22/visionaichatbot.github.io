@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="../chat.css" />
+    <title>Vision</title>
+  </head>
+  <body class="bg-sky-950 relative h-screen">
+    <nav class="flex items-center justify-between container mx-auto">
+      <div class="w-[20%]">
+        <img src="/logo.png" alt="" />
+      </div>
+      <ul class="mr-10 text-md flex space-x-10 max-md:text-xs max-md:mr-3">
+        <li
+          id="usefulCom"
+          class="text-white cursor-pointer font-semibold hover:text-red-500"
+        >
+          Voice Useful Command
+        </li>
+        <a
+          class="text-white cursor-pointer font-semibold hover:text-red-500 target:"
+          href="https://www.marvel.com/characters/vision/on-screen/profile"
+          target="_blank"
+          >View My Profile</a
+        >
+      </ul>
+    </nav>
+    <section class="flex flex-col items-center">
+      <div
+        id="time"
+        class="text-white text-md md:text-3xl text-3xl font-bold mb-5"
+      ></div>
+      <div class="text-white text-md font-bold md:text-3xl">
+        Vision Voice Assistant and Ai ChatBot
+      </div>
+    </section>
+    <div class="flex justify-center">
+      <section class="w-[50%] max-md:w-[90%] rounded-md">
+        <div class="container mx-auto h-screen flex flex-col justify-between">
+          <div
+            class="header flex items-center justify-center text-gray-300 border-b border-gray-600 h-12"
+          >
+            <h3 class="text-base font-medium">Hello I'm vision</h3>
+          </div>
+          <div class="chat-container flex-1">
+            <div id="chatBox"></div>
+          </div>
+
+          <div
+            class="input-container bg-sky-900 sticky bottom-0 p-2 flex justify-between rounded-md"
+          >
+            <button id="micro">
+              <div class="mx-3">
+                <i
+                  id="microChange"
+                  class="text-blue-300 text-lg fa-solid fa-microphone-slash"
+                ></i>
+              </div>
+            </button>
+
+            <input
+              type="text"
+              id="userInput"
+              placeholder="Send a message."
+              class="bg-gray-800 text-white outline-none border-none py-1 px-2 flex-1 text-sm font-medium rounded-md"
+            />
+            <button
+              id="sendBut"
+              class="flex items-center justify-center px-4 py-2 rounded-md bg-blue-500 text-white cursor-pointer ml-2 transition duration-300"
+            >
+              <i id="buttonChange" class="fa-regular fa-paper-plane"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
